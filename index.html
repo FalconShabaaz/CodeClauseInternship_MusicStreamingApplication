@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="png" href="Images/music-note.png">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Music Streaming Application</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="Images/music-note.png" alt="logo" />
+                <p>Rhythmix</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="nav-form">
+                <input placeholder="Search.." type="text" />
+                <button type="submit"><i class="ri-search-2-line"></i></button>
+            </div>
+        </div>
+
+        <!-- SideBar -->
+        <div class="sideBar">
+            <div class="sideelements">
+                <ul id="listContainer">
+                    <li><a id="trending">Trending Songs</a></li>
+                    <li><a id="top">Top Hits</a></li>
+                    <li><a id="remix">Remix Hits</a></li>
+                    <li><a id="viral">Viral Hits</a></li>
+                    <li><a id="melodious">Melodious</a></li>
+                </ul>
+
+                <div id="currentSongInfo">
+                    <img id="currentSongImage" src="https://samplesongs.netlify.app/album-arts/death-bed.jpg"
+                        alt="sideImg" />
+                    <div class="miniDetails">
+                        <p id="currentlyPlaying">Currently Playing </p>
+                        <p id="currentSongTitle">Death Bed</p>
+                        <p id="currentSongArtist">Powfu <span><img src="Images/music2.gif" alt=""></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Songs container -->
+        <div class="SongContainer">
+            <h1 class="SongHeading" id="mainHeading">Find Your Favorite Songs Here...</h1>
+            <div class="grid-container" id="gridContainer">
+                <!-- <div id="songItem"></div>
+              <div id="songItem"></div>
+              <div id="songItem"></div> -->
+            </div>
+        </div>
+
+        <button id="backToTop" type="button" class="btn">
+            <i class="ri-arrow-up-s-line"></i>
+        </button>
+
+        <!-- Progress Bar -->
+        <div class="bottom">
+            <div class="icons">
+                <a id="backwardHandler"><i class="ri-skip-back-fill" id="back"></i></a>
+                <a id="playHandler"></a>
+                <a id="forwardHandler"><i class="ri-skip-forward-fill" id="forward"></i></a>
+            </div>
+            <div class="controlBar">
+                <input type="range" name="range" id="myProgressBar" max="100" value="0" />
+                <div class="volumeBarControls">
+                    <span><i class="ri-volume-down-fill" id="volumeUp"></i></span>
+                    <input type="range" name="range" id="myVolumeBar" min="0" max="100" value="40" />
+                    <span><i class="ri-volume-up-fill" id="volumeDown"></i> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scriptGsap.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

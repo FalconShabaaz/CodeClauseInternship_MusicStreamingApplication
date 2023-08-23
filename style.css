@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script&family=Edu+SA+Beginner&family=Great+Vibes&family=Marcellus&family=Playfair+Display:wght@600&family=Raleway:wght@100;200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar .logo p {
+    font-family: 'Dancing Script';
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: -12px;
+
+}
+
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    color:rgb(178, 178, 178);
+    transition: .2 ease ease-in-out;
+}
+
+.navbar .nav-form {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 80%;
+    margin-right: -150px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar .nav-form button {
+    width: 8%;
+    height: 82.5%;
+    border: 2px solid rgb(0, 0, 0);
+    /* border-radius: 0 10px 10px 0; */
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.navbar .nav-form button:hover {
+    color: rgb(173, 173, 173);
+    cursor: pointer;
+}
+
+.navbar .nav-form input {
+    width: 40%;
+    height: 60%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 4px 15px;
+    outline: none;
+}
+
+
+.bottom {
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 88%;
+    /* border-top: 1px solid white; */
+}
+
+.bottom .controlBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom #myProgressBar {
+    margin: 10px;
+    margin-left: 25%;
+    width: 50%;
+    height: 4px;
+    margin-top: -3px;
+    transition: width 0.5s ease-in-out;
+}
+.bottom #myProgressBar:hover{
+    cursor: pointer;
+}
+
+input[type="range"]#myProgressBar {
+    accent-color: #ff3856;
+  }
+
+  input[type="range"]#myProgressBar:hover {
+    accent-color: #ff6666;
+  }
+
+.bottom #myVolumeBar {
+    width: 60%;
+    height: 4px;
+}
+
+.bottom #myVolumeBar{
+    cursor: pointer;
+}
+
+
+input[type="range"]#myVolumeBar {
+    accent-color: #ff3856;
+  }
+
+  input[type="range"]#myVolumeBar:hover{
+    accent-color: #ff6666;
+  }
+
+
+
+.volumeBarControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: -45px;
+    padding: 5px;
+}
+
+#volumeUp,
+#volumeDown {
+    color: white;
+    margin: 4px;
+}
+
+#volumeUp,
+#volumeDown:hover {
+    cursor: pointer;
+}
+
+.bottom .icons {
+    margin-top: -13px;
+    margin-bottom: 15px;
+}
+
+.bottom .icons a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 10px 5px;
+}
+
+.bottom .icons a:hover {
+    cursor: pointer;
+}
+
+.bottom .icons #playHandler {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 2px;
+    border-radius: 50%;
+}
+
+
+.sideBar {
+    margin-top: 60px;
+    width: 18%;
+    height: calc(100vh - 60px);
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    /* border-right: 2px solid white; */
+} 
+
+.sideBar .sideelements {
+    margin: 20px;
+}
+
+.sideBar .sideelements ul {
+    margin-top: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.sideBar .sideelements ul li{
+    padding: 3px;
+    margin: 3px;
+}
+
+.sideBar .sideelements ul li a:hover{
+    color: rgb(178, 178, 178);
+    transition: .2 ease ease-in-out;
+    cursor: pointer;
+}
+
+
+.SongContainer {
+    margin-left: 18%;
+    width: calc(100% - 18%);
+    background-color: darkgrey;
+    background-image: url(Images/background1.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+.SongContainer .SongHeading {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    font-family: 'Marcellus', serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.grid-container {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    position: relative;
+}
+
+.grid-item {
+    margin: 10px;
+    border: 1px solid #000000;
+    text-align: center;
+    height: 280px;
+    /* background-color: rgb(255, 64, 92); */
+    /* background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); */
+    /* background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%); */
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 96%;
+    height: 70%;
+    height: auto;
+    padding: 4px 4px;
+    border-radius: 10px;
+}
+
+
+.grid-item p {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 8px;
+
+}
+
+.grid-item .artistName {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(90, 90, 90);
+}
+
+.controlBtn{
+display: none;
+width:  40px;
+height: 40px;
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border-radius: 50%;
+font-size: 30px;
+padding: 4px;
+margin: 8px;
+font-weight: 600;
+}
+
+.controlBtn:hover{
+    cursor : pointer ;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+}
+
+
+
+#backToTop {
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: 2px solid black;
+    background-color:rgb(0, 0, 0);
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 900;
+    position: fixed;
+    top:560px;
+    right: 45px;
+    z-index: 2;
+  }
+  
+  
+  #backToTop:hover{
+      background-color:rgb(178, 178, 178);
+      color: black;
+      transition: 0.2s ease-in-out;
+      border: none;
+      cursor: pointer;
+  }
+  
+.grid-item:hover{
+    cursor: pointer;
+
+}
+
+#currentSongInfo{
+    width: 112%;
+    height: 90px;
+    margin-top: 118%;
+    /* border: 0.5px solid white; */
+    border-radius: 8px;
+    margin-left:-16px ;
+    display: flex;
+    align-items: center;
+}
+
+#currentSongImage{
+    width: 30%;
+    height: 96%;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+#currentlyPlaying{
+    margin-left: 10px;
+    font-size: 17px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family:'Raleway', sans-serif;
+    color: white;
+    z-index: 2;
+}
+
+#currentSongTitle{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family:'Raleway', sans-serif;
+    color: white;
+    margin-top: -5px;
+    z-index: 2;
+}
+
+
+#currentSongArtist{
+    margin-top:6px ;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family:'Raleway', sans-serif;
+    color: rgb(244, 244, 244);
+}
+
+
+#currentSongArtist span img {
+    width: 65%;
+    height: 75px;
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 1%;
+    left: 32%;
+    z-index: -1;
+    opacity: 0.6;
+}
